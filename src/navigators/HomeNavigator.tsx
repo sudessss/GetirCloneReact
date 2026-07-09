@@ -1,7 +1,9 @@
 import React from 'react'
 import {createStackNavigator} from "@react-navigation/stack"
 import HomeScreen from "../../src/components/screens/HomeScreen"
-import { Image } from "react-native"
+import { Image, Text } from "react-native"
+import CategoryFilterScreen from "../components/screens/CategoryFilterScreen"
+
 const Stack =createStackNavigator()
 function HomeNavigator() {
   return (
@@ -19,6 +21,18 @@ function HomeNavigator() {
             marginTop:-8
 
           }}/>
+        )}}/>
+
+        <Stack.Screen
+        name= "CategoryDetails"
+        component= {CategoryFilterScreen}
+        options={{
+          headerTintColor: 'white',
+          headerBackTitle: " ",
+
+          headerStyle:{backgroundColor : "#5C3EBC"},
+          headerTitle: () => (
+         <Text style = {{fontWeight: 'bold', color:'white', fontSize: 16}}>Ürünler</Text>
         )}}/>
     </Stack.Navigator>
   ) 

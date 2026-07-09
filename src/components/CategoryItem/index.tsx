@@ -1,16 +1,21 @@
 import { StyleSheet, Text, View, TouchableOpacity, Image, Dimensions} from 'react-native'
 import React from 'react'
 import { Category } from '../screens/models';
+import { useNavigation } from '@react-navigation/native'
+
 
 const { width } = Dimensions.get("window");
+
+
 
 type categoryItemProps = {
     item: Category
 }
 
-const index = ({ item }: categoryItemProps) => {
+function index ({ item }: categoryItemProps) {
+  const navigation = useNavigation()
   return (
-    <TouchableOpacity 
+    <TouchableOpacity onPress= {() => navigation.navigate("CategoryDetails", {category:item})}
       style={{
         width: width * 0.25,        
         height: width * 0.24,      
