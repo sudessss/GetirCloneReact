@@ -18,7 +18,7 @@ function index({category}:{category:Category}) {
   return (
   <ScrollView style = {{width: '100%' , backgroundColor: "#7849F7", height: height * 0.065 }} showsHorizontalScrollIndicator={false} bounces= {true} horizontal ={true} >
      {categories.map((item, index) => (
-  <CategoryBox key= {item.id} item={item} active={category}/>
+  <CategoryBox key= {item.id}item={item} active={category}/>
 ))}
     </ScrollView>
   )
