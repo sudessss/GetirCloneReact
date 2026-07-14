@@ -38,7 +38,6 @@ function ImageCarousel({ images }: { images: string[] }) {
         onViewableItemsChanged={onViewRef.current} 
       />
       
-      {/* Sayfa Noktaları (Dots) */}
       <View style={styles.paginationContainer}>
         {images.map((_, index) => (
           <View 
