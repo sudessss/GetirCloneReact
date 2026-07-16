@@ -20,7 +20,7 @@ function index(props) {
 <View style={{ flex: 1 }}>
   <ScrollView contentContainerStyle={{ paddingBottom: 90 }}>
 <ImageCarousel images= {product.images}/>
-<DetailBox price = {product.fiyat} name = {product.name} quantity ={product.miktar}/>,
+<DetailBox price = {product.fiyat} name = {product.name} quantity ={product.miktar}/>
 <Text style={{paddingVertical: 12, paddingHorizontal:10, color:'#808B99', fontWeight: '600' }}> Detaylar</Text>
 
  </ScrollView>

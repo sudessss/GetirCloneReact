@@ -2,14 +2,13 @@ import React from 'react';
 import { View, Text, Dimensions, TouchableOpacity } from 'react-native';
 
 
-// Ekran genişliğini dinamik almak için
 const { width } = Dimensions.get('window');
 
-function CardButton() { // Baş harfini büyük yaptık
+function CardButton() { 
   return (
     <TouchableOpacity
       style={{
-        position: 'absolute', // Butonu ekranın akışından çıkarıp sabitlemek için scrollview yaparken sabit duruyor
+        position: 'absolute', 
         bottom: 30,            
         left: 0,
         right: 0,
@@ -28,7 +27,7 @@ function CardButton() { // Baş harfini büyük yaptık
         style={{
           width: '100%',
           height: 50,
-          backgroundColor: '#5D3EBD', // Getir moru
+          backgroundColor: '#5D3EBD', 
           borderRadius: 15,
           justifyContent: 'center',
           alignItems: 'center',
