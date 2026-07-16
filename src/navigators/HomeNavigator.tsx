@@ -13,7 +13,7 @@ import FontAwesome from '@expo/vector-icons/FontAwesome';
 
 const Stack = createStackNavigator();
 const {width, height} = Dimensions.get('window')
-const tabHiddenRoutes = ["ProductDetails"];
+const tabHiddenRoutes = ["ProductDetails", "CartScreen"];
 
 function HomeNavigator({ route }) {
   const navigation = useNavigation();
